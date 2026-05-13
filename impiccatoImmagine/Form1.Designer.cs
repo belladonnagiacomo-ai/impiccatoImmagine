@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             label1 = new Label();
-            animali = new Button();
-            paesi = new Button();
-            tecnologia = new Button();
+            button1 = new Button();
+            button2 = new Button();
+            button3 = new Button();
             SuspendLayout();
             // 
             // label1
@@ -47,47 +47,47 @@
             label1.TabIndex = 0;
             label1.Text = "Che categoria vuoi scegliere?";
             // 
-            // animali
+            // button1
             // 
-            animali.BackgroundImageLayout = ImageLayout.Center;
-            animali.ForeColor = Color.Black;
-            animali.ImageAlign = ContentAlignment.TopLeft;
-            animali.Location = new Point(163, 155);
-            animali.Name = "animali";
-            animali.Size = new Size(213, 46);
-            animali.TabIndex = 1;
-            animali.Text = "categoria animali";
-            animali.UseVisualStyleBackColor = true;
-            animali.Click += button1_Click;
+            button1.BackgroundImageLayout = ImageLayout.Center;
+            button1.ForeColor = Color.Black;
+            button1.ImageAlign = ContentAlignment.TopLeft;
+            button1.Location = new Point(163, 155);
+            button1.Name = "button1";
+            button1.Size = new Size(213, 46);
+            button1.TabIndex = 1;
+            button1.Text = "categoria animali";
+            button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
             // 
-            // paesi
+            // button2
             // 
-            paesi.Location = new Point(463, 155);
-            paesi.Name = "paesi";
-            paesi.Size = new Size(213, 46);
-            paesi.TabIndex = 2;
-            paesi.Text = "categoria paesi";
-            paesi.UseVisualStyleBackColor = true;
-            paesi.Click += button2_Click;
+            button2.Location = new Point(463, 155);
+            button2.Name = "button2";
+            button2.Size = new Size(213, 46);
+            button2.TabIndex = 2;
+            button2.Text = "categoria paesi";
+            button2.UseVisualStyleBackColor = true;
+            button2.Click += button2_Click;
             // 
-            // tecnologia
+            // button3
             // 
-            tecnologia.Location = new Point(745, 155);
-            tecnologia.Name = "tecnologia";
-            tecnologia.Size = new Size(213, 46);
-            tecnologia.TabIndex = 3;
-            tecnologia.Text = "categoria tecnologia";
-            tecnologia.UseVisualStyleBackColor = true;
-            tecnologia.Click += button3_Click;
+            button3.Location = new Point(745, 155);
+            button3.Name = "button3";
+            button3.Size = new Size(213, 46);
+            button3.TabIndex = 3;
+            button3.Text = "categoria tecnologia";
+            button3.UseVisualStyleBackColor = true;
+            button3.Click += button3_Click;
             // 
             // form1
             // 
             AutoScaleDimensions = new SizeF(12F, 30F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1444, 881);
-            Controls.Add(tecnologia);
-            Controls.Add(paesi);
-            Controls.Add(animali);
+            Controls.Add(button3);
+            Controls.Add(button2);
+            Controls.Add(button1);
             Controls.Add(label1);
             Font = new Font("Segoe UI", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
             Margin = new Padding(5, 6, 5, 6);
@@ -100,8 +100,8 @@
         #endregion
 
         private Label label1;
-        private Button animali;
-        private Button paesi;
-        private Button tecnologia;
+        private Button button1;
+        private Button button2;
+        private Button button3;
     }
 }
