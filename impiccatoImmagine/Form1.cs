@@ -10,6 +10,7 @@ namespace impiccatoImmagine
             button2.Visible = false;
             button3.Visible = false;
             label1.Visible = false;
+            label2.Visible = false;
         }
         public form1()
         {
@@ -18,6 +19,7 @@ namespace impiccatoImmagine
 
         private void button1_Click(object sender, EventArgs e)
         {
+            
             Random r = new Random();
             List<string> animali = new List<string>(File.ReadLines("animali.csv"));
             animali.RemoveAt(0);
@@ -26,6 +28,7 @@ namespace impiccatoImmagine
             riga = animali[num];
 
             menu();
+            label2.Visible = true;
         }
 
         private void button2_Click(object sender, EventArgs e)
