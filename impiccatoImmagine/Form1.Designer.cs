@@ -1,6 +1,6 @@
 ﻿namespace impiccatoImmagine
 {
-    partial class Form1
+    partial class form1
     {
         /// <summary>
         ///  Required designer variable.
@@ -28,57 +28,71 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             label1 = new Label();
-            label2 = new Label();
-            pictureBox1 = new PictureBox();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            animali = new Button();
+            paesi = new Button();
+            tecnologia = new Button();
             SuspendLayout();
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Font = new Font("Showcard Gothic", 15.75F, FontStyle.Italic, GraphicsUnit.Point, 0);
-            label1.Location = new Point(424, 32);
+            label1.BackColor = Color.Black;
+            label1.Font = new Font("Showcard Gothic", 24F, FontStyle.Italic, GraphicsUnit.Point, 0);
+            label1.ForeColor = Color.FromArgb(0, 192, 0);
+            label1.Location = new Point(289, 39);
             label1.Margin = new Padding(5, 0, 5, 0);
             label1.Name = "label1";
-            label1.Size = new Size(244, 27);
+            label1.Size = new Size(530, 40);
             label1.TabIndex = 0;
-            label1.Text = "Gioco dell impiccato";
+            label1.Text = "Che categoria vuoi scegliere?";
             // 
-            // label2
+            // animali
             // 
-            label2.AutoSize = true;
-            label2.Font = new Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label2.Location = new Point(28, 148);
-            label2.Name = "label2";
-            label2.Size = new Size(66, 20);
-            label2.TabIndex = 1;
-            label2.Text = "tentativi:";
+            animali.BackgroundImageLayout = ImageLayout.Center;
+            animali.ForeColor = Color.Black;
+            animali.ImageAlign = ContentAlignment.TopLeft;
+            animali.Location = new Point(163, 155);
+            animali.Name = "animali";
+            animali.Size = new Size(213, 46);
+            animali.TabIndex = 1;
+            animali.Text = "categoria animali";
+            animali.UseVisualStyleBackColor = true;
+            animali.Click += button1_Click;
             // 
-            // pictureBox1
+            // paesi
             // 
-            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(694, 32);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(312, 356);
-            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox1.TabIndex = 2;
-            pictureBox1.TabStop = false;
+            paesi.Location = new Point(463, 155);
+            paesi.Name = "paesi";
+            paesi.Size = new Size(213, 46);
+            paesi.TabIndex = 2;
+            paesi.Text = "categoria paesi";
+            paesi.UseVisualStyleBackColor = true;
+            paesi.Click += button2_Click;
             // 
-            // Form1
+            // tecnologia
+            // 
+            tecnologia.Location = new Point(745, 155);
+            tecnologia.Name = "tecnologia";
+            tecnologia.Size = new Size(213, 46);
+            tecnologia.TabIndex = 3;
+            tecnologia.Text = "categoria tecnologia";
+            tecnologia.UseVisualStyleBackColor = true;
+            tecnologia.Click += button3_Click;
+            // 
+            // form1
             // 
             AutoScaleDimensions = new SizeF(12F, 30F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1444, 881);
-            Controls.Add(pictureBox1);
-            Controls.Add(label2);
+            Controls.Add(tecnologia);
+            Controls.Add(paesi);
+            Controls.Add(animali);
             Controls.Add(label1);
             Font = new Font("Segoe UI", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
             Margin = new Padding(5, 6, 5, 6);
-            Name = "Form1";
-            Text = "Form1";
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            Name = "form1";
+            Text = "tecno";
             ResumeLayout(false);
             PerformLayout();
         }
@@ -86,7 +100,8 @@
         #endregion
 
         private Label label1;
-        private Label label2;
-        private PictureBox pictureBox1;
+        private Button animali;
+        private Button paesi;
+        private Button tecnologia;
     }
 }
