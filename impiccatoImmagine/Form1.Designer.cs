@@ -32,20 +32,21 @@
             button1 = new Button();
             button2 = new Button();
             button3 = new Button();
+            label2 = new Label();
             SuspendLayout();
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.BackColor = Color.Black;
+            label1.BackColor = Color.Transparent;
             label1.Font = new Font("Showcard Gothic", 24F, FontStyle.Italic, GraphicsUnit.Point, 0);
-            label1.ForeColor = Color.FromArgb(0, 192, 0);
-            label1.Location = new Point(289, 39);
+            label1.ForeColor = Color.Black;
+            label1.Location = new Point(463, 34);
             label1.Margin = new Padding(5, 0, 5, 0);
             label1.Name = "label1";
-            label1.Size = new Size(530, 40);
+            label1.Size = new Size(205, 40);
             label1.TabIndex = 0;
-            label1.Text = "Che categoria vuoi scegliere?";
+            label1.Text = " categoria ";
             // 
             // button1
             // 
@@ -80,11 +81,22 @@
             button3.UseVisualStyleBackColor = true;
             button3.Click += button3_Click;
             // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Font = new Font("Showcard Gothic", 24F, FontStyle.Italic);
+            label2.Location = new Point(382, 34);
+            label2.Name = "label2";
+            label2.Size = new Size(351, 40);
+            label2.TabIndex = 4;
+            label2.Text = "Scegli la difficoltà";
+            // 
             // form1
             // 
             AutoScaleDimensions = new SizeF(12F, 30F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1444, 881);
+            Controls.Add(label2);
             Controls.Add(button3);
             Controls.Add(button2);
             Controls.Add(button1);
@@ -103,5 +115,6 @@
         private Button button1;
         private Button button2;
         private Button button3;
+        private Label label2;
     }
 }
