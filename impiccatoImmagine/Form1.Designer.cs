@@ -40,6 +40,8 @@
             label3 = new Label();
             textBox2 = new TextBox();
             label4 = new Label();
+            parola = new Label();
+            parolaf = new Label();
             SuspendLayout();
             // 
             // label1
@@ -183,11 +185,31 @@
             label4.TabIndex = 11;
             label4.Text = "Parola";
             // 
+            // parola
+            // 
+            parola.AutoSize = true;
+            parola.Location = new Point(775, 336);
+            parola.Name = "parola";
+            parola.Size = new Size(0, 44);
+            parola.TabIndex = 12;
+            // 
+            // parolaf
+            // 
+            parolaf.AutoSize = true;
+            parolaf.Location = new Point(732, 381);
+            parolaf.Name = "parolaf";
+            parolaf.Size = new Size(150, 44);
+            parolaf.TabIndex = 13;
+            parolaf.Text = "label5";
+            parolaf.Click += parolaf_Click;
+            // 
             // form1
             // 
             AutoScaleDimensions = new SizeF(23F, 44F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1844, 988);
+            Controls.Add(parolaf);
+            Controls.Add(parola);
             Controls.Add(label4);
             Controls.Add(textBox2);
             Controls.Add(label3);
@@ -222,5 +244,7 @@
         private Label label3;
         private TextBox textBox2;
         private Label label4;
+        private Label parola;
+        private Label parolaf;
     }
 }

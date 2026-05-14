@@ -49,6 +49,7 @@ namespace impiccatoImmagine
             label4.Visible = false;
             textBox1.Visible = false;
             textBox2.Visible = false;
+            parolaf.Visible = false;
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -100,8 +101,16 @@ namespace impiccatoImmagine
 
             Elimina();
             Crea();
+            parolaf.Visible = true;
             rigaSPlit = riga.Split(",");
             nascosta = rigaSPlit[0];
+            string p = "";
+            for (int i = 0; i < nascosta.Length; i++)
+            {
+                p += "_ ";
+            }
+            parolaf.Text = p;
+
         }
 
         private void button5_Click(object sender, EventArgs e)
@@ -110,6 +119,13 @@ namespace impiccatoImmagine
             Crea();
             rigaSPlit = riga.Split(",");
             nascosta = rigaSPlit[1];
+            parolaf.Visible = true;
+            string p = "";
+            for (int i = 0; i < nascosta.Length; i++)
+            {
+                p += "_ ";
+            }
+            parolaf.Text = p;
         }
 
         private void button6_Click(object sender, EventArgs e)
@@ -118,8 +134,18 @@ namespace impiccatoImmagine
             Crea();
             rigaSPlit = riga.Split(",");
             nascosta = rigaSPlit[2];
+            parolaf.Visible = true;
+            string p = "";
+            for (int i = 0; i < nascosta.Length; i++)
+            {
+                p += "_ ";
+            }
+            parolaf.Text = p;
         }
 
+        private void parolaf_Click(object sender, EventArgs e)
+        {
 
+        }
     }
 }
