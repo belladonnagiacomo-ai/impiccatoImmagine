@@ -196,9 +196,10 @@
             // parolaf
             // 
             parolaf.AutoSize = true;
+            parolaf.Font = new Font("Showcard Gothic", 24F, FontStyle.Italic);
             parolaf.Location = new Point(732, 381);
             parolaf.Name = "parolaf";
-            parolaf.Size = new Size(150, 44);
+            parolaf.Size = new Size(158, 50);
             parolaf.TabIndex = 13;
             parolaf.Text = "label5";
             parolaf.Click += parolaf_Click;

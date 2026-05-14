@@ -107,7 +107,7 @@ namespace impiccatoImmagine
             string p = "";
             for (int i = 0; i < nascosta.Length; i++)
             {
-                p += "_ ";
+                p += "-";
             }
             parolaf.Text = p;
 
@@ -123,7 +123,7 @@ namespace impiccatoImmagine
             string p = "";
             for (int i = 0; i < nascosta.Length; i++)
             {
-                p += "_ ";
+                p += "-";
             }
             parolaf.Text = p;
         }
@@ -138,7 +138,7 @@ namespace impiccatoImmagine
             string p = "";
             for (int i = 0; i < nascosta.Length; i++)
             {
-                p += "_ ";
+                p += "-";
             }
             parolaf.Text = p;
         }
