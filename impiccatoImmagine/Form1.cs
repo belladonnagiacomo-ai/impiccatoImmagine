@@ -141,6 +141,23 @@ namespace impiccatoImmagine
                 p += "-";
             }
             parolaf.Text = p;
+            char[] parolac = nascosta.ToCharArray();
+            char[] trattini = p.ToCharArray();
+
+            bool contiene = nascosta.Contains(textBox1.Text[0]);
+            if(contiene == true)
+            {
+                for (int i = 0; i < nascosta.Length; i++)
+                {
+                    if (parolac[i] == textBox1.Text[0])
+                    {
+                        trattini[i] = textBox1.Text[0];
+                        
+                    }
+                }
+            }
+
+            parolaf.Text = new string(trattini);
         }
 
         private void parolaf_Click(object sender, EventArgs e)
