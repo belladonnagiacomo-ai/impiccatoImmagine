@@ -2,9 +2,8 @@ namespace impiccatoImmagine
 {
     public partial class form1 : Form
     {
-        string riga, nascosta;
+        string riga, nascosta, p;
         string[] rigaSPlit;
-        int a = 0, t = 0, p = 0;
 
         private void menu()
         {
@@ -50,6 +49,7 @@ namespace impiccatoImmagine
             textBox1.Visible = false;
             textBox2.Visible = false;
             parolaf.Visible = false;
+            lettera.Visible = false;
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -104,7 +104,7 @@ namespace impiccatoImmagine
             parolaf.Visible = true;
             rigaSPlit = riga.Split(",");
             nascosta = rigaSPlit[0];
-            string p = "";
+            lettera.Visible = true;
             for (int i = 0; i < nascosta.Length; i++)
             {
                 p += "-";
@@ -120,7 +120,7 @@ namespace impiccatoImmagine
             rigaSPlit = riga.Split(",");
             nascosta = rigaSPlit[1];
             parolaf.Visible = true;
-            string p = "";
+            lettera.Visible = true;
             for (int i = 0; i < nascosta.Length; i++)
             {
                 p += "-";
@@ -135,34 +135,40 @@ namespace impiccatoImmagine
             rigaSPlit = riga.Split(",");
             nascosta = rigaSPlit[2];
             parolaf.Visible = true;
-            string p = "";
+            lettera.Visible = true;
+
             for (int i = 0; i < nascosta.Length; i++)
             {
                 p += "-";
             }
             parolaf.Text = p;
+            
+        }
+
+        private void parolaf_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lettera_Click(object sender, EventArgs e)
+        {
             char[] parolac = nascosta.ToCharArray();
             char[] trattini = p.ToCharArray();
 
             bool contiene = nascosta.Contains(textBox1.Text[0]);
-            if(contiene == true)
+            if (contiene == true)
             {
                 for (int i = 0; i < nascosta.Length; i++)
                 {
                     if (parolac[i] == textBox1.Text[0])
                     {
                         trattini[i] = textBox1.Text[0];
-                        
+
                     }
                 }
             }
 
             parolaf.Text = new string(trattini);
-        }
-
-        private void parolaf_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

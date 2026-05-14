@@ -42,6 +42,7 @@
             label4 = new Label();
             parola = new Label();
             parolaf = new Label();
+            lettera = new Button();
             SuspendLayout();
             // 
             // label1
@@ -204,11 +205,22 @@
             parolaf.Text = "label5";
             parolaf.Click += parolaf_Click;
             // 
+            // lettera
+            // 
+            lettera.Location = new Point(223, 375);
+            lettera.Name = "lettera";
+            lettera.Size = new Size(381, 73);
+            lettera.TabIndex = 14;
+            lettera.Text = "inserisci lettera";
+            lettera.UseVisualStyleBackColor = true;
+            lettera.Click += lettera_Click;
+            // 
             // form1
             // 
             AutoScaleDimensions = new SizeF(23F, 44F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1844, 988);
+            Controls.Add(lettera);
             Controls.Add(parolaf);
             Controls.Add(parola);
             Controls.Add(label4);
@@ -247,5 +259,6 @@
         private Label label4;
         private Label parola;
         private Label parolaf;
+        private Button lettera;
     }
 }
